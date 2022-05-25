@@ -1,0 +1,16 @@
+{
+    "tutorials": [
+        {
+            "id": 1,
+            "title": "Me myself",
+            "description": "Just me...",
+            "published": true
+        },
+        {
+            "title": "Tutorial 2",
+            "description": "This is the tutorial 2",
+            "id": 2,
+            "published": false
+        }
+    ]
+}
