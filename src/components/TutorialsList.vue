@@ -54,7 +54,7 @@
 
         <router-link
           :to="'/tutorials/' + currentTutorial.id"
-          class="badge badge-warning"
+          class="badge bg-warning"
           >Edit</router-link
         >
       </div>
@@ -69,8 +69,8 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import TutorialDataService from "@/services/TutorialDataService";
-import Tutorial from "@/types/Tutorial";
-import ResponseData from "@/types/ResponseData";
+import type Tutorial from "@/types/Tutorial";
+import type ResponseData from "@/types/ResponseData";
 
 export default defineComponent({
   name: "tutorials-list",

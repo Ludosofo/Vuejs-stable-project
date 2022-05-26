@@ -1,7 +1,8 @@
-import axios, { AxiosInstance } from "axios";
+import axios from "axios";
+import type  { AxiosInstance }  from "axios";
 
 const apiClient: AxiosInstance = axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: "http://localhost:3000",
   headers: {
     "Content-type": "application/json",
   },

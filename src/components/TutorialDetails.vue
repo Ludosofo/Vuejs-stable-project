@@ -28,7 +28,7 @@
     </form>
 
     <button
-      class="badge badge-primary mr-2"
+      class="badge bg-primary mr-2"
       v-if="currentTutorial.published"
       @click="updatePublished(false)"
     >
@@ -36,17 +36,17 @@
     </button>
     <button
       v-else
-      class="badge badge-primary mr-2"
+      class="badge bg-primary mr-2"
       @click="updatePublished(true)"
     >
       Publish
     </button>
 
-    <button class="badge badge-danger mr-2" @click="deleteTutorial">
+    <button class="badge bg-danger mr-2" @click="deleteTutorial">
       Delete
     </button>
 
-    <button type="submit" class="badge badge-success" @click="updateTutorial">
+    <button type="submit" class="badge bg-success" @click="updateTutorial">
       Update
     </button>
     <p>{{ message }}</p>
@@ -61,8 +61,8 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import TutorialDataService from "@/services/TutorialDataService";
-import Tutorial from "@/types/Tutorial";
-import ResponseData from "@/types/ResponseData";
+import type Tutorial from "@/types/Tutorial";
+import type ResponseData from "@/types/ResponseData";
 
 export default defineComponent({
   name: "tutorial",

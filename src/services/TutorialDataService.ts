@@ -1,4 +1,5 @@
 import http from "@/http-common";
+import type Tutorial from "@/types/Tutorial";
 
 /* eslint-disable */
 class TutorialDataService {
@@ -10,7 +11,7 @@ class TutorialDataService {
     return http.get(`/tutorials/${id}`);
   }
 
-  create(data: any): Promise<any> {
+  create(data: Tutorial): Promise<any> {
     return http.post("/tutorials", data);
   }
 
